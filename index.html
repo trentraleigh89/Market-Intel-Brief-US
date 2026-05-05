@@ -1266,21 +1266,23 @@ function Tag({ label }) {
 }
 
 // -------------------- TILE BUTTONS (shared, same on both faces) --------------------
-function TileButtons({ onFlip, onArticle }) {
+function TileButtons({ onFlip, onArticle, hideFlip }) {
   return (
     <div style={{ display: 'flex', gap: 8 }}>
-      <button onClick={onFlip}
-        className="btn-flip"
-        style={{
-          flex: '1 1 0', minWidth: 0, whiteSpace: 'nowrap',
-          display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
-          padding: '9px 10px', fontSize: 11, fontWeight: 700, letterSpacing: '0.05em',
-          background: C.surface, color: C.inkSoft,
-          border: `1px solid ${C.borderHi}`, borderRadius: 6,
-          cursor: 'pointer', transition: 'all 0.15s',
-        }}>
-        <RotateCcw size={11} strokeWidth={2.5} /> Tap for Rep Insights
-      </button>
+      {!hideFlip && (
+        <button onClick={onFlip}
+          className="btn-flip"
+          style={{
+            flex: '1 1 0', minWidth: 0, whiteSpace: 'nowrap',
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+            padding: '9px 10px', fontSize: 11, fontWeight: 700, letterSpacing: '0.05em',
+            background: C.surface, color: C.inkSoft,
+            border: `1px solid ${C.borderHi}`, borderRadius: 6,
+            cursor: 'pointer', transition: 'all 0.15s',
+          }}>
+          <RotateCcw size={11} strokeWidth={2.5} /> Tap for Rep Insights
+        </button>
+      )}
       <button onClick={onArticle}
         className="btn-article"
         style={{
@@ -1303,10 +1305,11 @@ const trackEvent = (name, props) => {
   try { if (typeof window !== 'undefined' && window.plausible) window.plausible(name, { props }); } catch (e) { /* noop */ }
 };
 
-function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, onRate, weekBadge, onUnsave }) {
+function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, onRate, weekBadge, onUnsave, disableFlip }) {
   const [flipped, setFlipped] = useState(false);
   const toggleFlip = (e) => {
     if (e) e.stopPropagation();
+    if (disableFlip) return;
     setFlipped(f => {
       const next = !f;
       // Track flip-open events (not flip-close) to measure read-through intent
@@ -1339,7 +1342,7 @@ function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, on
   const ratingValue = rating || null;
 
   return (
-    <div className="tile-outer" onClick={() => setFlipped(f => !f)}>
+    <div className="tile-outer" onClick={() => { if (!disableFlip) setFlipped(f => !f); }}>
       <div className="tile-inner" style={{ transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}>
         {/* FRONT */}
         <div className="tile-face tile-front" style={{
@@ -1392,7 +1395,7 @@ function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, on
           }}>
             {insight.source}
           </div>
-          <TileButtons onFlip={toggleFlip} onArticle={openSource} />
+          <TileButtons onFlip={toggleFlip} onArticle={openSource} hideFlip={disableFlip} />
           {onUnsave && (
             <button onClick={handleUnsave}
               className="no-print"
@@ -1546,6 +1549,7 @@ function VerticalSection({ meta, insights, briefId, bookmarkIds, ratings, onBook
               rating={ratings[id]}
               onBookmark={() => onBookmark(briefId, meta.id, i, ins)}
               onRate={onRate}
+              disableFlip={REGION === 'us' && meta.id === 'performance'}
             />
           );
         })}
