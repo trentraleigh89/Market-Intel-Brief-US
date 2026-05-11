@@ -169,6 +169,22 @@ const Trash2 = (p) => _Icon({...p, children: [
   _path('M14 11v6'),
 ]});
 
+const Trophy = (p) => _Icon({...p, children: [
+  _path('M6 9H4.5a2.5 2.5 0 0 1 0-5H6'),
+  _path('M18 9h1.5a2.5 2.5 0 0 0 0-5H18'),
+  _path('M4 22h16'),
+  _path('M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22'),
+  _path('M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22'),
+  _path('M18 2H6v7a6 6 0 0 0 12 0V2Z'),
+]});
+
+const ArrowRight = (p) => _Icon({...p, children: [
+  _path('M5 12h14'),
+  _path('m12 5 7 7-7 7'),
+]});
+
+
+
 
 
 
@@ -264,6 +280,284 @@ const vMeta = (id) => VERTICALS_META.find(v => v.id === id);
 // EMEA sourcing pipeline produces a Week 16 brief.
 const BRIEFS_BY_REGION = {
   us: [
+  {
+    id: 'w2026-19',
+    issue: 'Issue \u2116\u202f19 / 2026',
+    weekRange: 'May 4 \u2013 May 10, 2026',
+    weekShort: 'May 4 \u2013 May 10',
+    stateOfPlay: [
+      'Reinvestment-cycle activity accelerates: Edge Fitness reopens two upgraded clubs (Crystal Lake IL April 29, St. Peters MO May 6), the NY Marriott Marquis renovates its 23rd-floor fitness center for May reopening, the Westin Crystal City prepares May 28 grand reopening, and UAH converts a decommissioned pool into a secondary weight room.',
+      'Greystar 2026 amenity standard locks in fitness-plus-recovery integration as default specification across new and refresh multifamily developments \u2014 largest US multifamily operator influences peer specifications.',
+      'The Pack (Russell Wilson, Ciara, Rumble co-founders) signs first franchise development agreements for 18 units across Northern NJ and South Florida \u2014 highest-profile new boutique concept entering large competitive metros in 2026.',
+      'Penn State Trustees approve $25M Abington Athletics renovation May 8 \u2014 entry point to a multi-Commonwealth-Campus capital cycle that will generate equipment-specification RFPs through 2028.',
+    ],
+    oneBigIdea: {
+      headline: '2026 is shaping up as a reinvestment year, not a new-build year. And what operators are specifying inside those reinvestments is the wellness bundle, not just bigger equipment counts. The reps who reframe the proposal motion around constrained-footprint recovery integration will win the year.',
+      body: 'Reinvestment projects are constrained-footprint by definition. Operators can\u2019t just add more cardio rows, so they\u2019re choosing what to add: recovery zones over expanded cardio, plate-loaded strength over more selectorized stacks, programming-aligned rigs over generic counts. That choice is showing up everywhere this week. Edge Fitness, the Marriott Marquis, the Westin Crystal City, UAH, and the NY Giants are all renovations rather than new builds. The Greystar 2026 standard governs both. Multifamily Executive and Hospitality Design both name recovery integration as default 2026 spec. Reps still leading with equipment counts are pitching a 2024 spec into a 2026 procurement.',
+    },
+    trending: [
+      { topic: 'Premium-tier lifestyle bundle (pickleball + recovery + longevity) is the new threshold spec', weeks: 2, verticals: ['health-clubs', 'multi-unit', 'hospitality'], sourceCount: 6, summary: 'Traene Fitness & Pickleball (Dover, NH), Life Time Ocotillo + Paradise Valley (AZ), and ongoing premium independent positioning all anchor on the lifestyle bundle. Recovery zones and pickleball courts are now baseline expectations alongside equipment counts at the premium threshold.' },
+      { topic: 'Top Crunch franchisees collectively building toward roughly 250 locations by end of 2026', weeks: 2, verticals: ['health-clubs'], sourceCount: 4, summary: 'Fitness Ventures opened 93rd Crunch location in PA with 15 more by year-end. CR Fitness Holdings on track to 110 locations including new builds in Newnan and Stone Mountain GA + Saginaw TX. Blue Ridge Fitness (15 to 17) and Southwest Fitness (12 to 18) compound the buildout. Routed to Trending per key-account policy.' },
+      { topic: 'May 2026 pro and elite-college performance capex window is the largest of the year', weeks: 1, verticals: ['performance'], sourceCount: 5, summary: 'Broncos $175M facility completing this month, Patriots facility opening this spring, NY Giants Quest Diagnostics renovation underway, UConn Gampel $99.4M Phase 1 in progress, and NFL rookie minicamps May 8-10 across 32 teams all converge in the May-June capex window.' },
+    ],
+    verticals: {
+      'health-clubs': [
+        {
+          headline: 'Why the Gen Z son of Planet Fitness\u2019s co-founder is \u201cstraight up targeting\u201d the gym giant',
+          tags: ['PREMIUM', 'WIN'],
+          outcome: 'won',
+          context: 'Justin Grondahl, 25-year-old son of Planet Fitness co-founder Michael Grondahl, is opening Traene Fitness & Pickleball in Dover, NH in fall 2026. The 63,000 sq ft facility, in the long-vacant former Ames building 600 yards from the first-ever Planet Fitness, includes 10 indoor pickleball courts, more than 20,000 sq ft of Life Fitness / Hammer Strength equipment, 3-tier saunas, in-ground cold plunges, red light therapy, and filtered water across every source. Presale pricing is $19.99/month basic (gym plus recovery) and $99.99/month with pickleball and group fitness. Grondahl told Athletech the fitness industry has \u201cstopped innovating\u201d and that Traene is \u201ctrying to basically become the new Planet Fitness of the pickleball and class industry.\u201d',
+          implication: 'Traene is a clean LFHS win against a Planet Fitness legacy operator who knows the HVLP segment cold. The fact that the Grondahl family selected LFHS over the equipment they grew up with at Planet Fitness is a credentialing event reps can use across the HVLP-premium-disruptor segment. The eight-pickleball-court + recovery + Hyrox programming bundle is now a reference spec for prospects evaluating premium HVLP positioning.',
+          conversation: 'Justin Grondahl, who grew up inside Planet Fitness, chose LFHS for his own premium HVLP build. He had every equipment option available and chose us, then placed his club 600 yards from the original Planet Fitness on purpose. Let me help you build a Traene reference into your premium-HVLP prospect conversations.',
+          source: 'Athletech News',
+          sourceUrl: 'https://athletechnews.com/traene-fitness-pickleball-justin-grondahl-planet-fitness/',
+        },
+        {
+          headline: 'The Pack signs first franchise development agreements for 18 units \u2014 Russell Wilson and Ciara back new boutique strength-cardio-striking concept entering Northern NJ and South Florida',
+          tags: ['BOUTIQUE', 'GROWTH'],
+          context: 'The Pack, a new boutique fitness concept combining strength training, cardio conditioning, and striking-based self-defense, announced first franchise territory development agreements representing 18 units across two markets. Eight units are committed across Northern New Jersey (Hudson and Bergen counties), and 10 units are committed across South Florida (Miami and Palm Beach County). The brand was founded by Rumble co-founders Noah Neiman and Andy Stenzler, with NFL quarterback Russell Wilson and recording artist Ciara as founding partners.',
+          implication: 'The Pack is a fresh boutique concept entering large competitive metros with celebrity-backed credentialing and a defined 18-unit pipeline. Reps covering boutique and premium independent operators in Northern NJ and South Florida should treat The Pack as a priority engagement \u2014 the equipment specification window for new boutique concepts typically opens 6-12 months before first-unit opening, and standardization across the 18-unit pipeline means one specification decision cascades.',
+          conversation: 'The Pack is the highest-profile new boutique concept entering NJ and South Florida this year, with celebrity credentialing and an 18-unit pipeline. Let me help you build the engagement plan for the Northern NJ and South Florida franchisees \u2014 the equipment spec decision for new boutiques is typically locked 6-12 months before opening, and one win cascades across 18 units.',
+          source: 'Club Solutions Magazine',
+          sourceUrl: 'https://clubsolutionsmagazine.com/2026/05/fitness-industry-expansion-heats-up-new-clubs-reopenings-and-franchise-deals/',
+        },
+        {
+          headline: 'Edge Fitness Clubs reopens Crystal Lake IL (April 29) and St. Peters MO (May 6) after major upgrade investments \u2014 regional mid-tier independent chain reinvestment cycle accelerates',
+          tags: ['MID-PREMIUM', 'REFRESH'],
+          context: 'The Edge Fitness Clubs reopened two locations following major facility upgrade investments. The Crystal Lake, Illinois location reopened April 29, and the St. Peters, Missouri location held its grand reopening May 6. Edge operates more than 35 clubs across the Mid-Atlantic and Midwest. The reinvestment cycle reflects a broader pattern of mid-tier regional independent chains executing facility refresh rather than new-build expansion in 2026.',
+          implication: 'Regional mid-tier independent chains executing reinvestment cycles in 2026 are a structurally different procurement opportunity than new-build chain expansion. Reinvestment cycles typically involve in-place equipment replacement with shorter decision windows (60-120 days) than greenfield new-builds (12-24 months).',
+          conversation: 'Mid-tier regional independent chains are executing reinvestment cycles instead of new-build expansion this year. Edge Fitness just reopened two clubs after upgrades. Let me help you map the regional independent chain reinvestment cycles in your territory.',
+          source: 'Club Solutions Magazine',
+          sourceUrl: 'https://clubsolutionsmagazine.com/2026/05/fitness-industry-expansion-heats-up-new-clubs-reopenings-and-franchise-deals/',
+        },
+        {
+          headline: 'BODYBAR Pilates opens first Oklahoma studio as boutique Pilates expansion continues outpacing strength-and-cardio formats in new-market entry',
+          tags: ['BOUTIQUE', 'GROWTH'],
+          context: 'BODYBAR Pilates, a Texas-headquartered boutique Pilates franchise, opens its first Oklahoma studio this summer in West Wichita, operated by first-time franchise owners. Boutique Pilates and reformer concepts (BODYBAR, STRONG Pilates, Solidcore, Club Pilates, Pure Barre) are entering secondary and tertiary metros across the Sun Belt and Midwest at accelerated rates.',
+          implication: 'Boutique Pilates new-market entry is a structurally different equipment specification opportunity than traditional strength-and-cardio boutiques. Pilates-format boutiques specify reformer equipment and light strength accessories, but increasingly add adjacent strength-and-conditioning rigs to support hybrid programming.',
+          conversation: 'Boutique Pilates is the fastest-growing boutique segment entering secondary metros in 2026, and operators are increasingly bundling adjacent strength rigs. Let me help you map the boutique Pilates new-market entries in your territory.',
+          source: 'Club Solutions Magazine',
+          sourceUrl: 'https://clubsolutionsmagazine.com/2026/05/fitness-industry-expansion-heats-up-new-clubs-reopenings-and-franchise-deals/',
+        },
+        {
+          headline: 'Boutique fitness industry shifts toward strength integration as Pilates, yoga, and barre studios add structured strength formats alongside existing programming',
+          tags: ['BOUTIQUE', 'PROGRAMMING'],
+          context: 'A 2026 boutique fitness trends report (Les Mills 2026 Trends) confirms boutique studios are increasingly integrating structured strength formats alongside Pilates, yoga, barre, and conditioning classes. The shift is reinforced by the growing Hyrox-affiliated independent operator base (now exceeding 15,000 affiliated facilities globally) and the boutique Pilates-plus-strength hybrid trend.',
+          implication: 'Boutique strength integration is a structural new equipment specification opportunity. Studios that historically specified only reformers, mats, light dumbbells, and bodyweight accessories are now specifying plate-loaded strength, functional rigs, and adjustable benches.',
+          conversation: 'Boutique strength integration is creating a new equipment spec opportunity that didn\u2019t exist 18 months ago. Pilates, yoga, and barre studios are adding plate-loaded strength and functional rigs alongside existing programming.',
+          source: 'Les Mills',
+          sourceUrl: 'https://www.lesmills.com/us/clubs-and-facilities/research-insights/fitness-trends/7-key-trends-shaping-fitness-in-2026/',
+        },
+      ],
+      'hospitality': [
+        {
+          headline: 'Courtyard by Marriott Chattanooga Downtown completes multimillion-dollar renovation \u2014 fitness center included in the four-month upgrade across all 128 guest rooms and public spaces',
+          tags: ['MID-PREMIUM', 'REFRESH'],
+          context: 'McKibbon Hospitality and Marriott announced May 7 the completion of a comprehensive multimillion-dollar renovation of Courtyard by Marriott Chattanooga Downtown. The four-month project upgraded all 128 guest rooms, public spaces, the fitness center, and additional amenities. McKibbon operates dozens of hotels across Marriott, Hilton, Hyatt, IHG, and Kimpton portfolios as one of the largest US third-party hotel management companies. The Courtyard brand operates more than 1,300 locations in nearly 60 countries.',
+          implication: 'Mid-premium full-service property renovations across Marriott Courtyard, Hilton Hampton/Hilton Garden Inn, and comparable brands continue to bundle fitness center upgrades into broader four-month renovation cycles. The procurement window for these renovations is 60-120 days from announcement to equipment delivery, which is structurally faster than greenfield new-build cycles. Reps covering mid-tier hospitality should track third-party hotel management companies (McKibbon, Aimbridge, HEI, Atrium) as priority procurement engagement points \u2014 these companies aggregate fitness equipment specification decisions across dozens of branded properties.',
+          conversation: 'Third-party hotel management companies like McKibbon are running 60-120 day renovation cycles across dozens of branded properties. Let me help you build a target list of third-party management portfolios in your territory \u2014 one engagement at the management company can cascade across a portfolio of mid-tier Marriott, Hilton, and Hyatt branded properties.',
+          source: 'Hotel Online',
+          sourceUrl: 'https://www.hotel-online.com/news/courtyard-by-marriott-chattanooga-downtown-completes-multimillion-dollar-renovation',
+        },
+        {
+          headline: 'Recovery amenities moving into 4-star and boutique hotel builds as default spec \u2014 cold plunge, sauna, and integrated wellness now in pre-development conversations, not post-opening retrofits',
+          tags: ['SPEC', 'PROGRAMMING'],
+          context: 'The 2026 Hotel Development Outlook (Hospitality Design, May 7) shows recovery amenities (cold plunge, sauna, dedicated recovery zones) moving into 4-star and boutique hotel pre-development specifications as default expectations rather than post-opening differentiators. Combined with Hilton Hyperice Wellness Rooms expansion and Hyatt-Peloton partnership at nearly 400 properties (Week 18), the hospitality recovery integration trend is now a multi-segment, multi-brand pattern.',
+          implication: 'Hospitality fitness specifications are no longer about equipment counts alone \u2014 recovery zone integration is now a baseline expectation through the 4-star and boutique tiers, not just luxury. Reps should bundle recovery zone specifications alongside equipment counts in proposals.',
+          conversation: 'Recovery zones have moved from luxury differentiator to mid-segment baseline expectation in 12 months. Let me help you reframe your hospitality proposals to bundle recovery specifications underneath equipment counts.',
+          source: 'Hospitality Design',
+          sourceUrl: 'https://hospitalitydesign.com/projects/development-destinations/hotel-development-outlook-2026/',
+        },
+        {
+          headline: 'Hilton 2026 opening pipeline accelerates with Tempo Nashville Midtown, Tempo San Diego Del Mar, Tempo Savannah Historic District, and Signia Indianapolis \u2014 fitness amenities cited across the portfolio',
+          tags: ['MID-PREMIUM', 'GROWTH'],
+          context: 'Hilton\u2019s 2026 opening pipeline includes multiple Tempo by Hilton properties (Nashville Midtown 161 rooms, San Diego Del Mar 127 rooms, Savannah Historic District), Signia by Hilton Indianapolis (Indianapolis\u2019 tallest hotel, opening fall 2026, with a \u201cstate-of-the-art fitness center\u201d cited in the brand release), and Canopy by Hilton Deer Valley (Q2 2026, fitness center plus pool/sauna). Tempo by Hilton properties uniformly specify a fitness center as a brand-standard amenity.',
+          implication: 'Hilton\u2019s 2026 pipeline generates a steady stream of fitness amenity specification opportunities at the Tempo (mid-premium lifestyle) and Signia (premium) tiers. Reps covering hospitality should track Hilton\u2019s 2026 pipeline as a multi-property procurement opportunity, with Tempo openings cycling through Q1-Q3 2026 and Signia Indianapolis (the tallest hotel in the city) opening fall 2026.',
+          conversation: 'Hilton has a wave of Tempo and Signia openings hitting the US through 2026. Each property is a fresh fitness amenity specification opportunity. Let me help you map the Hilton 2026 pipeline as a multi-property procurement plan.',
+          source: 'Hilton',
+          sourceUrl: 'https://stories.hilton.com/releases/new-hilton-openings-in-2026',
+        },
+        {
+          headline: 'Westin Crystal City prepares May 28 grand reopening following major property transformation \u2014 Arlington VA flagship full-service refresh joins the spring 2026 hospitality refresh cycle',
+          tags: ['MID-PREMIUM', 'REFRESH'],
+          context: 'The Westin Crystal City (Arlington, VA) will hold its grand reopening on May 28 following a major property transformation including 15,000+ sq ft of event space, a new elevated restaurant, and a full-service coffee bar. The reopening joins a broader spring 2026 hospitality property-transformation cycle that includes the Marriott Marquis (May), the Orlando World Center Marriott (Grand Ballroom renovation just completed), and ongoing refresh cycles at multiple full-service Marriott urban flagships.',
+          implication: 'Hospitality property-transformation cycles in spring 2026 are creating a wave of full-service property fitness amenity refresh opportunities running through Q3 2026. Reps covering full-service Marriott and Hilton properties in the Mid-Atlantic and major urban markets should treat property-transformation announcements as leading indicators for fitness amenity refresh procurement windows.',
+          conversation: 'There\u2019s a spring 2026 wave of full-service hospitality property transformations \u2014 Marriott Marquis, Westin Crystal City, Orlando World Center Marriott, and more. Let me help you build the Mid-Atlantic full-service hospitality refresh engagement plan.',
+          source: 'Daily Lodging Report',
+          sourceUrl: 'https://dlr.skift.com/2026/04/23/kimpton-opens-new-hotel-in-midtown-manhattan/',
+        },
+      ],
+      'multi-unit': [
+        {
+          headline: 'Gym Pros 2026 luxury multifamily developer\u2019s guide explicitly names Life Fitness treadmills as the \u201cgold standard\u201d for high-end housing \u2014 LFHS positioning held inside the developer-facing reference document',
+          tags: ['LUXURY', 'SPEC'],
+          context: 'The Gym Pros 2026 Developer\u2019s Guide for luxury apartment buildings (published the first week of May) explicitly states that \u201cLife Fitness Treadmills remain the gold standard for luxury housing because they offer the rugged durability needed for high-volume use\u201d and recommends a 3.0 HP continuous-duty motor as the 2026 luxury multifamily standard. The guide also recommends StairMaster, functional trainers, and integrated touchscreen consoles as the 2026 luxury multifamily baseline. 70% of renters now demand an on-site gym, and 84% of Americans prioritize wellness in housing choices.',
+          implication: 'The Gym Pros 2026 guide locks in Life Fitness positioning at the top of the luxury multifamily equipment specification reference document developers and property managers actually use during procurement. Reps covering luxury multifamily and BTR should reference the Gym Pros guide directly when engaging luxury multifamily developers \u2014 the developer\u2019s reference document already names LFHS as the standard.',
+          conversation: 'The luxury multifamily developer reference document just named LFHS treadmills as the gold standard. Let me help you reference the Gym Pros 2026 guide directly when engaging luxury multifamily prospects \u2014 their procurement team is already reading a document that names us as the standard.',
+          source: 'Gym Pros',
+          sourceUrl: 'https://www.gympros.com/fitness-equipment-for-luxury-apartment-buildings-the-2026-developers-guide-infographic/',
+        },
+        {
+          headline: 'Recovery zones moving into standard multifamily fitness spec \u2014 developer-facing amenity guides now baseline recovery integration as default, not premium',
+          tags: ['SPEC', 'PROGRAMMING'],
+          context: 'Multifamily developer-facing amenity guidance published the first week of May reframes recovery zones (cold plunge, sauna, stretching/recovery space) as standard fitness amenity specifications rather than premium upgrades. Multifamily Executive\u2019s 2026 amenity report confirms cold plunge, sauna, and sound therapy displacing oversized clubrooms. Greystar, Mill Creek Residential, and Bozzuto have each updated 2026 development standards to include recovery zone integration as default.',
+          implication: 'Multifamily recovery zone integration has graduated from amenity-arms-race talking point to standard development specification across Class A operators. Update your multifamily proposal template to lead with recovery zone integration alongside cardio and strength counts.',
+          conversation: 'Multifamily recovery zones have moved from differentiator to standard development spec in 12 months. Let me help you reframe your multifamily proposals to bundle recovery zones underneath equipment specs as standard, not optional.',
+          source: 'Multifamily Executive',
+          sourceUrl: 'https://www.multifamilyexecutive.com/design-development/beyond-clubroom-8-amenity-trends-shaping-multifamily-2026',
+        },
+        {
+          headline: 'Greystar continues senior living and BTR amenity expansion as 2026 amenity standards lock in fitness-and-recovery integration for new and refresh developments',
+          tags: ['BTR', 'PROGRAMMING'],
+          context: 'Greystar, the largest US multifamily operator and developer, continues 2026 expansion across senior living and build-to-rent (BTR) with updated amenity standards locking in fitness-and-recovery integration for new developments and refresh projects. The Greystar 2026 amenity standard treats fitness center, recovery zone, and wellness programming as baseline expectations across Class A and luxury tiers. Greystar Old Ivy Residences Virginia (Q2 2026 delivery, 336 garden apartments) and Seventeen Hundred on East Charlotte (just opened, $200M, Greystar-managed) are current reference properties.',
+          implication: 'Greystar\u2019s 2026 amenity standard sets the procurement template for the largest US multifamily operator and influences peer operator specifications. Reps should reference the Greystar 2026 amenity standard when engaging multifamily developers, BTR developers, and senior living operators.',
+          conversation: 'Greystar\u2019s 2026 amenity standard locks in fitness-plus-recovery as the new procurement baseline. Let me help you reference the Greystar standard when engaging multifamily prospects.',
+          source: 'Greystar',
+          sourceUrl: 'https://www.greystar.com/properties',
+        },
+        {
+          headline: 'Seventeen Hundred on East Charlotte opens as $200M Greystar-managed luxury community \u2014 a professional-grade fitness studio and yoga studio anchor the wellness amenity package',
+          tags: ['LUXURY', 'CAPITAL'],
+          context: 'Seventeen Hundred on East, a $200M luxury apartment community by The Phillips Collective, has officially opened in Charlotte. The 295-residence property is Greystar-managed and includes a professional-grade fitness studio, yoga studio, luxury pet spa, and curated ground-floor wellness retail partners opening in early 2026. The property positions wellness amenities at the center of the resident experience and is one of the most valuable high-end residential developments in Charlotte.',
+          implication: 'Seventeen Hundred is a current reference property for luxury multifamily fitness amenity specifications and the wellness-anchored amenity bundle. Charlotte\u2019s rapid population growth (top 10 US fastest-growing city, 100+ new residents per day) makes the Charlotte market a priority luxury multifamily engagement opportunity through 2027.',
+          conversation: 'Seventeen Hundred Charlotte is the new reference property for Greystar-managed luxury multifamily wellness amenities. Let me help you build a Charlotte luxury multifamily account map with Seventeen Hundred as the comparison set.',
+          source: 'Mecklenburg Times',
+          sourceUrl: 'https://mecktimes.com/news/2026/01/22/luxury-apartment-community-seventeen-hundred-opens-in-charlotte/',
+        },
+        {
+          headline: 'Lendlease Habitat Residences Culver City LA prepares 2026 opening as $316M mixed-use multifamily project with indoor-outdoor fitness center as core amenity',
+          tags: ['LUXURY', 'CAPITAL'],
+          context: 'Lendlease\u2019s $316M Habitat mixed-use development is delivering the Habitat Residences in Los Angeles\u2019s Culver City submarket in 2026. The 260-unit property includes studio, one-, and two-bedroom units, with an indoor-outdoor fitness center cited as a core amenity. The project is delivered in partnership with Australian superannuation fund Aware Super. The indoor-outdoor fitness format is an emerging California luxury multifamily pattern that combines climate-controlled indoor strength and cardio with covered outdoor functional training space.',
+          implication: 'Indoor-outdoor fitness centers are an emerging Southern California luxury multifamily pattern that creates a structurally different equipment specification opportunity. Reps covering California luxury multifamily should track indoor-outdoor fitness center announcements as a fresh procurement signal, distinct from traditional enclosed fitness amenities.',
+          conversation: 'Indoor-outdoor fitness centers are emerging as a Southern California luxury multifamily pattern. The Habitat is the highest-profile current example. Let me help you build the indoor-outdoor proposal motion for California luxury multifamily prospects.',
+          source: 'Multifamily Dive',
+          sourceUrl: 'https://www.multifamilydive.com/news/lendlease-finishing-touches-316m-la-apartments/748278/',
+        },
+      ],
+      'campus-rec': [
+        {
+          headline: 'Penn State Trustees approve $25M renovation of Abington Athletics building May 8 \u2014 24-month construction window with expanded fitness, training, and team space',
+          tags: ['CAPITAL', 'SPEC'],
+          context: 'The Penn State Board of Trustees approved May 8 a $25M renovation of the Abington Campus Athletics building, with a 24-month construction window. The project includes expanded fitness center space, dedicated team training areas, sports medicine, and locker room renovations. The approval is part of a multi-Commonwealth-Campus capital improvement cycle. The construction RFP cycle is expected to open Q3 2026 with phased equipment specification through 2027.',
+          implication: 'The Penn State Abington approval is the entry point to a multi-Commonwealth-Campus capital cycle that will generate equipment specification RFPs at multiple Penn State satellite campuses through 2028. Reps covering Mid-Atlantic campus recreation should engage Penn State Athletics procurement now \u2014 before the construction RFP opens.',
+          conversation: 'Penn State just approved $25M for Abington with a 24-month build, and there are more Commonwealth Campus refreshes in the pipeline. Let me help you engage Penn State Athletics procurement now.',
+          source: 'Penn State News',
+          sourceUrl: 'https://www.psu.edu/news/administration/story/trustees-approve-25-million-renovation-athletics-building-penn-state-abington',
+        },
+        {
+          headline: 'Grand Valley State University Recreation Center renovations continue into 2026 with Matrix Fitness and Technogym as named equipment partners \u2014 competitive flag against the LFHS Big-Ten-and-comparable campus rec template',
+          tags: ['CAPITAL', 'COMPETITIVE'],
+          context: 'Grand Valley State University Recreation Center renovations continue into 2026 with indoor turf zones, more plate-loaded strength, portable benches, and multi-use cable systems. The director of Recreation & Wellness has confirmed that GVSU is partnering with both Matrix Fitness AND Technogym to provide students with up-to-date amenities. The facility serves over 400,000 annual scans, comparable to universities twice GVSU\u2019s size. The renovation responds to 2024 student survey results requesting expanded equipment and functional training options.',
+          implication: 'Matrix Fitness AND Technogym both winning at GVSU is a competitive flag in the Big-Ten-adjacent and large-public Midwest campus rec segment. Reps covering Midwest and Big-Ten-adjacent campus recreation should sharpen the LFHS-versus-Matrix-and-Technogym competitive talk track now. The dual-supplier model GVSU is using is itself a competitive pattern worth tracking.',
+          conversation: 'Matrix and Technogym both won at GVSU, which is a competitive flag for the Midwest public-university segment. Let me help you sharpen your LFHS-versus-Matrix-and-Technogym competitive talk track for your campus rec prospects \u2014 we need to be in those conversations before the dual-supplier procurement decision locks.',
+          source: 'Grand Valley Lanthorn',
+          sourceUrl: 'https://lanthorn.com/126087/news/rec-center-renovations-expected-to-continue-into-2026/',
+        },
+        {
+          headline: 'Indiana University Recreational Sports wins multiple 2026 NIRSA Awards including Outstanding Programs Award \u2014 IU as the contemporary campus rec programming reference point',
+          tags: ['DESIGN', 'PROGRAMMING'],
+          context: 'Indiana University Recreational Sports announced multiple 2026 NIRSA Award wins this week, including the NIRSA Outstanding Programs Award and a NIRSA Honor Award for student development. IU\u2019s Student Recreational Sports Center programming model integrates wellness, intramural sports, fitness equipment, and outdoor adventure programming under one operational umbrella.',
+          implication: 'IU Recreational Sports\u2019 NIRSA recognition positions the IU programming model as a reference point Big Ten and large-public campus rec directors will benchmark against in 2026-2028 facility refresh decisions. Reps should reference the IU programming integration model when engaging directors on equipment specifications.',
+          conversation: 'IU just won the NIRSA Outstanding Programs Award, which makes them a reference point for Big Ten and large-public campus rec programming standards. Let me help you build the talk track that connects equipment specifications to the IU programming integration model.',
+          source: 'IU Recreational Sports',
+          sourceUrl: 'https://recsports.indiana.edu/about/awards-recognition.html',
+        },
+        {
+          headline: 'Binghamton University begins 75,000 sq ft East Gym renovation \u2014 functional training turf, indoor running track, three wood courts, and four multipurpose rooms, completion end of 2026',
+          tags: ['CAPITAL', 'SPEC'],
+          context: 'Binghamton University is undergoing a 75,000 sq ft renovation of the East Gym at its Recreation Center. The expansion adds a functional training turf area, an indoor running track, three wood courts, four multipurpose rooms, and a stretching and core studio. The project also includes HVAC and life safety system upgrades. Completion is expected by end of 2026. Director of Campus Recreational Services Tom St. John cited demand exceeding facility capacity at peak times as the project driver.',
+          implication: 'Binghamton\u2019s East Gym renovation is a procurement-ready equipment specification opportunity in the SUNY system, with functional training and multipurpose programming as the equipment specification anchors. Reps covering Northeast and SUNY system campus recreation should engage Binghamton procurement and use the project as a SUNY-system reference for adjacent campus engagement.',
+          conversation: 'Binghamton\u2019s 75,000 sq ft East Gym renovation completes by end of 2026, and the equipment spec is functional training turf plus indoor running track. Let me help you engage Binghamton procurement now and use the project as a SUNY-system reference.',
+          source: 'Campus Rec Magazine',
+          sourceUrl: 'https://campusrecmag.com/revamping-campus-recreation-inside-the-latest-renovations-and-new-builds/',
+        },
+        {
+          headline: 'University of Alabama in Huntsville (UAH) advances $1.2M Fitness Center renovation \u2014 pool conversion to weight room expands the secondary strength training and functional fitness footprint',
+          tags: ['CAPITAL', 'SPEC'],
+          context: 'The University of Alabama in Huntsville is moving forward with a $1.2M Fitness Center renovation, recently approved for design and development by the UA System Board of Trustees. The most notable specification change is the conversion of the existing pool area into a secondary weight room and functional fitness space. The renovation also adds new squat racks, platforms, and dedicated functional training infrastructure. Construction is expected to complete late 2026 pending final board approvals.',
+          implication: 'UAH\u2019s pool-to-weight-room conversion reflects a broader campus rec pattern of repurposing underutilized aquatic facilities into strength and functional training space. The pattern creates structurally different equipment specification opportunities than greenfield campus rec builds \u2014 the procurement windows are shorter and the equipment specifications are tightly defined by the converted space.',
+          conversation: 'UAH is converting a pool into a secondary weight room, which is a pattern playing out across multiple secondary-tier campus rec facilities. Let me help you map the pool-to-strength conversion opportunities in your territory.',
+          source: 'UAH Newsroom',
+          sourceUrl: 'https://www.uah.edu/newsroom/feature-stories/19732-uah-fitness-center-renovation-support-student-wellness-and-recreation',
+        },
+      ],
+      'military': [
+        {
+          headline: 'Army Reserve and National Guard H2F Performance Team fielding begins FY2026 \u2014 phased five-year rollout expands H2F beyond active component, opens Reserve and Guard equipment specification window',
+          tags: ['CAPITAL', 'PROGRAMMING'],
+          context: 'The US Army Reserve and Army National Guard begin phased fielding of H2F (Holistic Health and Fitness) Performance Teams in Fiscal Year 2026, expanding the program beyond the active component for the first time. The phased five-year rollout will progressively staff strength coaches, athletic trainers, nutritionists, and behavioral health specialists into Reserve and Guard brigade-level units. Reserve and Guard fielding follows the H2F Symposium May 13-14 (Week 18).',
+          implication: 'Reserve and Guard H2F fielding is a multi-year equipment and facility specification window opening now and running through FY2030. Reps should expand account maps beyond active-component installations to include Reserve and National Guard brigade-level facilities.',
+          conversation: 'Reserve and Guard H2F Performance Teams begin fielding this fiscal year, opening a separate procurement window from active component. Let me help you build an expanded tactical account map.',
+          source: 'US Army',
+          sourceUrl: 'https://www.army.mil/article/284517/h2f_performance_teams_arrive_in_the_reserve_and_national_guard',
+        },
+        {
+          headline: 'US Marine Corps unified PFT/CFT and body composition (WHtR) transition mid-implementation \u2014 fitness training methodology shift drives Marine Corps facility equipment refresh conversations',
+          tags: ['PROGRAMMING', 'SPEC'],
+          context: 'The US Marine Corps continues mid-implementation of its unified PFT/CFT and waist-to-height ratio (WHtR) body composition standards transition. The new standards shift the training methodology emphasis toward functional strength, work capacity, and body composition health markers. Marine Corps installation fitness facilities are evaluating equipment refresh cycles to support the updated training methodology, particularly across MCAGCC Twentynine Palms, Camp Lejeune, Camp Pendleton, and MCAS Cherry Point.',
+          implication: 'The Marine Corps PFT/CFT/WHtR transition creates equipment specification opportunities at Marine Corps installations whose training methodology is now misaligned with their existing equipment inventory. Reps should engage Marine Corps installation MWR and S-3 training officers.',
+          conversation: 'The Marine Corps unified PFT/CFT and WHtR transition is creating equipment refresh conversations at MCAGCC, Lejeune, Pendleton, and Cherry Point. Let me help you map the Marine Corps installations where the training methodology shift is opening fresh equipment specification windows.',
+          source: 'US Marine Corps',
+          sourceUrl: 'https://www.marines.mil/News/News-Display/Article/3914561/marines-transition-to-new-physical-fitness-standards-and-body-composition/',
+        },
+        {
+          headline: 'US Navy Physical Readiness Program incorporates forearm plank and 2,000-meter row \u2014 new event sequence drives rowing equipment specification across Navy installation fitness facilities',
+          tags: ['PROGRAMMING', 'SPEC'],
+          context: 'The US Navy Physical Readiness Program has incorporated two new fitness events: the forearm plank (replacing the curl-up as the abdominal muscular endurance assessment) and the 2,000-meter row (a non-weight-bearing, low-impact full-body cardio assessment). The Navy cites the forearm plank as a functional exercise required in 85% of shipboard tasks (pushing, pulling, lifting, carrying), and the 2,000-meter row as space-saving equipment that can be used on any naval vessel or installation. The standards are aligned with the Culture of Excellence initiative.',
+          implication: 'The 2,000-meter row standard creates a structural equipment specification opportunity across Navy MWR fitness centers and shipboard fitness installations. Navy installation fitness facilities now have a fitness assessment requirement that drives rower procurement as a baseline equipment specification. Reps covering tactical and military performance should engage Navy MWR fitness directors on rower fleet specifications aligned to the updated PRT standard.',
+          conversation: 'The Navy just made the 2,000-meter row a baseline fitness assessment standard, which creates a rower fleet specification opportunity across Navy MWR fitness centers. Let me help you map the Navy installations where the rower specification window is open.',
+          source: 'Navy MWR',
+          sourceUrl: 'https://www.navymwrbethesda.com/fitness/fitness-center/',
+        },
+      ],
+      'performance': [
+        {
+          headline: 'Denver Broncos $175M, 205,000 sq ft training facility on track for May 2026 completion \u2014 the largest NFL facility opening this month, with expanded weight room as a core feature',
+          tags: ['LEAGUE-LEVEL', 'CAPITAL'],
+          context: 'The Denver Broncos broke ground in August 2024 on a $175M, 205,000 sq ft training facility scheduled for completion in May 2026. The proposed building, located just west of the current Broncos Park facility, will include football and business operations on the top two floors, with the first floor optimizing the player experience and reducing foot travel between the locker room, weight room, and meeting areas. The facility is on budget and on schedule entering May 2026 per Broncos head of construction Amy Dee.',
+          source: 'Denver Gazette',
+          sourceUrl: 'https://www.denvergazette.com/2025/12/18/broncos-new-training-facility-on-budget-and-on-schedule-entering-2026/',
+        },
+        {
+          headline: 'New England Patriots new three-level training facility on track for Spring 2026 opening \u2014 more than doubles current footprint, weight room and recovery the explicit anchor specifications',
+          tags: ['LEAGUE-LEVEL', 'CAPITAL'],
+          context: 'The New England Patriots new football-exclusive training facility, built by Suffolk Construction adjacent to Gillette Stadium, is on track for Spring 2026 completion. The three-level facility more than doubles the team\u2019s current footprint and includes a nutrition center, player lounge, expanded weight room, hydro-focused training rooms (hot tubs, cold tubs, underwater treadmill), three new practice fields, and virtual reality rooms. The project follows the Patriots\u2019 last-place NFLPA player survey ranking for weight room (F grade) and is positioned to remediate facility competitiveness.',
+          source: 'CBS Sports',
+          sourceUrl: 'https://www.cbssports.com/nfl/news/patriots-unveil-plans-for-all-new-practice-facility-next-to-gillette-stadium-set-for-spring-2026-opening/',
+        },
+        {
+          headline: 'NFL rookie minicamps run May 8-10 across 32 teams \u2014 opens the post-draft strength-and-conditioning capex window with first-year rookie performance-development specifications driving Q3 capex',
+          tags: ['LEAGUE-LEVEL', 'PROGRAMMING'],
+          context: 'All 32 NFL teams run rookie minicamps May 8-10, opening the rookie performance-development cycle for 2026. Rookie minicamps are the first on-site work for drafted and undrafted free-agent rookies and define the first 90-day strength-and-conditioning specifications for the rookie class. The post-draft strength-and-conditioning capex conversation typically opens during rookie minicamps and runs through training camp open (late July). Combined with the Broncos and Patriots facility openings, the May-June 2026 elite-football S&C capex window is the largest of the year.',
+          source: 'NFL',
+          sourceUrl: 'https://www.nfl.com/news/2026-nfl-rookie-minicamps-dates-everything-to-know',
+        },
+        {
+          headline: 'UConn announces $99.4M Phase 1 renovation of Gampel Pavilion \u2014 multi-phase basketball facility refresh with Phase 1 completion November 2026',
+          tags: ['CONFERENCE-LEVEL', 'CAPITAL'],
+          context: 'The University of Connecticut Department of Athletics announced Phase 1 of a $99.4M renovation of Gampel Pavilion, the iconic home of UConn Basketball, with Phase 1 completion expected in November 2026. The first phase includes a full roof replacement, a Basketball Gameday Suite featuring state-of-the-art recruiting lounge, sports medicine space, team and coaches\u2019 locker rooms, and new concessions. The renovation is funded by non-tax revenue through State of Connecticut UConn 2000 bonds. DPR Construction is the construction manager, with S/L/A/M Collaborative as lead designer.',
+          source: 'UConn Athletics',
+          sourceUrl: 'https://uconnhuskies.com/news/2026/3/24/general-uconn-athletics-announces-planned-renovations-to-gampel-pavilion',
+        },
+        {
+          headline: 'NY Giants Quest Diagnostics Training Center weight room and locker room renovations underway \u2014 NFLPA D-plus locker room grade drives 2026 facility refresh cycle',
+          tags: ['LEAGUE-LEVEL', 'REFRESH'],
+          context: 'The New York Giants Quest Diagnostics Training Center is undergoing spring 2026 renovations to the weight room, locker room, kitchen, and cafeteria. The renovation follows the NFLPA anonymous survey scoring the Giants\u2019 locker room a D-plus grade, ranking 26th in the NFL. The construction window has forced the Giants to relocate 2026 training camp to the Greenbrier Resort in West Virginia for the first two weeks. The renovation is part of a broader NFL facilities upgrade pattern driven by NFLPA survey scores and player-retention competitive pressure.',
+          source: 'Big Blue View',
+          sourceUrl: 'https://www.bigblueview.com/new-york-giants-news/155890/training-camp-greenbrier-resort-west-virginia-world-cup-construction',
+        },
+      ],
+    },
+    flags: [
+      { competitor: 'Precor / Peloton', priority: 'high', note: 'Peloton Q3 FY26 earnings released May 7 with 14% YoY commercial-segment growth and management commentary explicitly citing \u201cPeloton-by-name\u201d hospitality pull (Hyatt-Peloton at nearly 400 properties). Combined with the Spotify content launch (Week 18) and Commercial Series fall 2026 shipping window, Peloton is executing a content + commercial-hardware double-stack that is the dominant competitive narrative across hospitality and corporate wellness.' },
+      { competitor: 'Technogym', priority: 'high', note: 'TIME Magazine named Technogym one of the 100 Most Influential Companies in the World for 2026 on April 30. The multi-year Google Cloud generative AI partnership continues to anchor competitive positioning. GVSU campus rec partnership confirms Technogym is competing aggressively in Midwest large-public campus recreation.' },
+      { competitor: 'Matrix Fitness', priority: 'high', note: 'Matrix Fitness wins Grand Valley State University Recreation Center partnership alongside Technogym \u2014 a Midwest public-university dual-supplier procurement model that is a competitive flag for adjacent Big-Ten-and-comparable campus recreation engagements. Matrix continues commercial-channel activity tied to broader Johnson Health Tech expansion.' },
+      { competitor: 'EGYM', priority: 'medium', note: 'EGYM Smart Strength Series 3 (Week 18 FIBO carry-forward) continues commercial-channel activation in the US mid-premium segment. Track EGYM as the mid-premium connected-equipment-bundle threat.' },
+      { competitor: 'Vision Fitness / Johnson Health Tech', priority: 'low', note: 'Vision Fitness 60+ commercial product launches for 2026 (Week 18 FIBO carry-forward) continue reaching market. Aggressive value-segment pricing positioned at independent health clubs, hospitality, and multifamily across US mid-tier deals.' },
+      { competitor: 'REP Fitness', priority: 'low', note: 'REP continues e-commerce and small-operator channel activity. Low immediate threat to US verticals this week.' },
+    ],
+    metadata: { processed: '~96', delivered: 24, dedup: 'Week 19 vs Week 18 duplicate audit performed. Two dedup catches applied: (1) Army H2F Symposium May 13-14 already covered in Week 18 \u2014 Military vertical insight 1 swapped to Reserve/National Guard H2F Performance Team FY2026 fielding (different angle). (2) Spotify-Peloton and Zwift-Rouvy hardware/content unbundling carry forward from Week 18 as Trending only. Key-account-policy routing: Fitness Ventures and CR Fitness Holdings Crunch expansion moved to Trending (Crunch is on the key-account exclusion list). Life Time Ocotillo and Paradise Valley openings referenced in State of Play and One Big Idea only (Life Time on exclusion list). Verticals expanded: Health Clubs 5, Hospitality 4, Multi-Unit 5, Campus Rec 5, Military 3, Performance/Athletics 5. One WIN tile this week with primary-source LFHS attribution and a current news event: Traene Fitness & Pickleball (Athletech News May 6). Marriott Marquis 23rd-floor fitness reopens this month with previously-confirmed LFHS install, referenced in State of Play and Hospitality vertical context as a calendar event but not flagged as a new win (the equipment selection decision predates this brief\u2019s window). Recency cutoff applied: Apr 10, 2026 (30-day max).' },
+  },
   {
     id: 'w2026-18',
     issue: 'Issue \u2116\u202f18 / 2026',
@@ -1341,17 +1635,47 @@ function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, on
   const isBookmarked = !!bookmarked;
   const ratingValue = rating || null;
 
+  const outcome = insight.outcome;
+  const isFlagged = outcome === 'won' || outcome === 'pursuit';
+  const isWin = outcome === 'won';
+  const flagRed = '#C41230';
+  const flagGold = '#D4AF37';
+  const flagGreen = '#1F7A4D';
+  const flagColor = isWin ? flagRed : flagGreen;
+  const flagLabel = isWin ? 'LF/HS WIN' : 'LF/HS IN-PURSUIT';
+  const FlagIcon = isWin ? Trophy : ArrowRight;
+
   return (
     <div className="tile-outer" onClick={() => { if (!disableFlip) setFlipped(f => !f); }}>
       <div className="tile-inner" style={{ transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}>
         {/* FRONT */}
-        <div className="tile-face tile-front" style={{
-          background: C.surface, border: `1px solid ${C.border}`,
-          borderTop: `3px solid ${C.red}`, borderRadius: 8,
+        <div className={`tile-face tile-front${isFlagged ? (isWin ? ' tile-flagged tile-flagged-win' : ' tile-flagged tile-flagged-pursuit') : ''}`} style={{
+          background: C.surface,
+          border: isFlagged ? `1.5px solid ${flagColor}` : `1px solid ${C.border}`,
+          borderTop: `3px solid ${isWin ? flagGold : (isFlagged ? flagColor : C.red)}`,
+          borderRadius: 8,
           padding: '16px 18px 14px',
           display: 'flex', flexDirection: 'column', gap: 10,
-          boxShadow: '0 1px 2px rgba(20,21,26,0.04)',
+          boxShadow: isWin ? `0 1px 2px rgba(212,175,55,0.25), 0 0 0 1px ${flagGold} inset` : '0 1px 2px rgba(20,21,26,0.04)',
         }}>
+          {isFlagged && (
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 5,
+              alignSelf: 'flex-start',
+              padding: '4px 10px 4px 8px',
+              fontSize: 9.5, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase',
+              color: '#fff',
+              background: isWin
+                ? `linear-gradient(90deg, ${flagRed} 0%, ${flagRed} 70%, ${flagGold} 100%)`
+                : flagColor,
+              borderRadius: 3,
+              marginBottom: 2,
+              boxShadow: isWin ? `0 0 0 1px ${flagGold}` : 'none',
+            }}>
+              <FlagIcon size={11} strokeWidth={2.5} color={isWin ? flagGold : '#fff'} />
+              {flagLabel}
+            </div>
+          )}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', flex: 1 }}>
               {weekBadge && (
