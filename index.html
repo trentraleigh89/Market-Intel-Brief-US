@@ -1646,7 +1646,7 @@ function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, on
   const FlagIcon = isWin ? Trophy : ArrowRight;
 
   return (
-    <div className="tile-outer" onClick={() => { if (!disableFlip) setFlipped(f => !f); }}>
+    <div className={`tile-outer${flipped ? ' tile-flipped' : ''}`} onClick={() => { if (!disableFlip) setFlipped(f => !f); }}>
       <div className="tile-inner" style={{ transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}>
         {/* FRONT */}
         <div className={`tile-face tile-front${isFlagged ? (isWin ? ' tile-flagged tile-flagged-win' : ' tile-flagged tile-flagged-pursuit') : ''}`} style={{
@@ -2176,6 +2176,27 @@ function IntelBrief() {
           .flag-row { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; }
           .flag-row > div { width: auto !important; }
           .one-big-body { font-size: 13px !important; }
+
+          /* MOBILE FLIP FIX: drop 3D rotation and use display swap so both
+             faces participate in normal document flow. This lets the back
+             face content render at its natural height and the page scrolls
+             normally to reveal everything below the fold. */
+          .tile-outer { min-height: 0 !important; }
+          .tile-inner { transform: none !important; transform-style: flat !important; height: auto !important; }
+          .tile-face {
+            position: relative !important;
+            inset: auto !important;
+            transform: none !important;
+            -webkit-backface-visibility: visible !important;
+            backface-visibility: visible !important;
+            overflow: visible !important;
+            height: auto !important;
+          }
+          /* Default: show front, hide back */
+          .tile-back { display: none !important; }
+          /* Flipped: hide front, show back */
+          .tile-flipped .tile-front { display: none !important; }
+          .tile-flipped .tile-back { display: flex !important; }
         }
 
         .filter-chip:hover:not(.active) {
