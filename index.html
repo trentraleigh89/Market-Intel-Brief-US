@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!-- Plausible Analytics — replace DOMAIN with the domain you register in Plausible -->
-<script defer data-domain="trentraleigh89.github.io/Market-Intel-Brief-US" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
+<!-- Plausible Analytics — domain registered lowercase in Plausible; do not change casing -->
+<script defer data-domain="trentraleigh89.github.io/market-intel-brief-us" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <script crossorigin src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
@@ -245,14 +245,6 @@ const REGIONS = [
     flag: '🇪🇺',
     url: 'https://trentraleigh89.github.io/Market-Intel-Brief-EMEA/',
     languageMatches: ['en-GB', 'en-IE', 'de', 'de-DE', 'de-AT', 'de-CH', 'fr', 'fr-FR', 'es', 'es-ES', 'it', 'it-IT', 'nl', 'nl-NL', 'sv', 'no', 'da', 'pt-PT'],
-  },
-  {
-    id: 'apj',
-    name: 'APJ',
-    shortName: 'APJ',
-    flag: '🌏',
-    url: 'https://trentraleigh89.github.io/Market-Intel-Brief-APJ/',
-    languageMatches: ['ja', 'ja-JP', 'zh', 'zh-CN', 'zh-TW', 'zh-HK', 'ko', 'ko-KR', 'hi', 'hi-IN', 'en-AU', 'en-NZ', 'en-SG', 'en-IN', 'th', 'vi', 'id', 'ms'],
   },
 ];
 const currentRegion = REGIONS.find(r => r.id === REGION) || REGIONS[0];
