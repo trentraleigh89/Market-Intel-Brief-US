@@ -2209,7 +2209,7 @@ function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, on
           <p className="tile-context" style={{
             margin: 0, fontFamily: FONT_BODY,
             fontSize: 13, lineHeight: 1.55, color: bodyColor,
-            flex: '0 0 auto',
+            flex: '1 1 auto',
           }}>{insight.context}</p>
           <div style={{
             fontFamily: FONT_BODY,
@@ -2859,13 +2859,13 @@ function IntelBrief() {
           overflow: hidden;
           text-overflow: ellipsis;
         }
-        /* Context line-clamp — caps at 6 lines. No min-height; card grows to actual content. */
+        /* Context — no line clamp. Front face needs to grow to match the
+           back face's natural height (implication + conversation + source +
+           buttons), otherwise the front shows a big empty band between the
+           clamped context and the bottom-pinned source. Letting context flow
+           keeps both faces balanced. */
         .tile-context {
-          display: -webkit-box;
-          -webkit-line-clamp: 6;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
+          overflow: visible;
         }
         .tile-back-clamp {
           display: -webkit-box;
