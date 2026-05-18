@@ -2242,7 +2242,6 @@ function InsightTile({ insight, insightIdStr, bookmarked, rating, onBookmark, on
         <div className="tile-face tile-back" style={{
           ...faceStyle,
           gap: 12,
-          overflowY: 'auto',
         }}>
           <div style={{
             borderLeft: `3px solid ${priority ? C.onPriority : C.red}`,
@@ -2844,6 +2843,7 @@ function IntelBrief() {
           height: 100%;
           transform-style: preserve-3d;
           transition: transform 0.65s cubic-bezier(0.22,1,0.36,1);
+          display: grid;
         }
         .tile-face {
           -webkit-backface-visibility: hidden;
@@ -2885,16 +2885,19 @@ function IntelBrief() {
           overflow: hidden;
           text-overflow: ellipsis;
         }
-        /* Front face participates in layout flow so the tile grows to fit content.
-           Back face overlays absolutely on flip, scrolls if taller than the front. */
+        /* Both faces share the same grid cell. The cell's height becomes
+           max(front content, back content), so the card naturally grows to
+           fit whichever face is taller. No scrolling required, no overflow
+           bleed into adjacent UI. The 3D rotation on .tile-inner still flips
+           between faces; backface-visibility hides the inactive face. */
         .tile-front {
-          position: relative;
+          grid-column: 1;
+          grid-row: 1;
         }
         .tile-back {
-          position: absolute;
-          inset: 0;
+          grid-column: 1;
+          grid-row: 1;
           transform: rotateY(180deg);
-          overflow-y: auto;
         }
         /* Lift the tile on hover with the offset hard shadow's heavier variant.
            Priority tiles use the red-dark shadow variant. */
