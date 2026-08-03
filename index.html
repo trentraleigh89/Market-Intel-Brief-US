@@ -729,7 +729,226 @@ const vMeta = id => VERTICALS_META.find(v => v.id === id);
 // real intelligence. Real EMEA content will replace placeholders once the
 // EMEA sourcing pipeline produces a Week 16 brief.
 const BRIEFS_BY_REGION = {
-  us: [{
+  us: [
+  {
+    id: 'w2026-31',
+    issue: 'Issue №31 / 2026',
+    weekRange: 'July 20 – August 2, 2026',
+    weekShort: 'July 20–Aug 2',
+    oneBigIdea: {
+      headline: 'MAA just published a 13 percent return on fitness-center repositioning, and funded the next cohort against it.',
+      body: 'In its July 29 second-quarter release, MAA disclosed a 98 percent re-lease rate and 13 percent cash-on-cash returns on the first cohort of properties it repositioned around upgraded fitness centers. The returns cleared the threshold that moves the next cohort into construction and repricing. This is a REIT with roughly 104,700 units across 16 states publishing, in an earnings document, that fitness-led repositioning pays. That is a recurring, funded equipment budget with a disclosed hurdle rate attached. Field action: work the next cohort property by property, and build every proposal to beat 13 percent. The customer already set the number you have to clear.'
+    },
+    trending: [
+      {
+        topic: 'Hotel fitness monetized as a paid, non-guest revenue channel',
+        weeks: 10,
+        verticals: ['hospitality'],
+        sourceCount: 2,
+        summary: 'Hilton renewed ResortPass for three years across the Americas and launched an Off Hours programming series to activate underused amenity time. Marriott separately approved day access as a global vendor arrangement. Fitness floors specified for overnight-guest load are now absorbing local paid traffic, which changes duty-cycle and serviceability requirements before it changes the equipment list.'
+      },
+      {
+        topic: 'Housing capital underwrites fitness as a measured return',
+        weeks: 4,
+        verticals: ['multi-unit'],
+        sourceCount: 2,
+        summary: 'MAA reported 13 percent cash-on-cash returns and a 98 percent re-lease rate on its first repositioning cohort, clearing the threshold that funds the next. New ground-up projects at Richmond and White Marsh carry named fitness scopes, and P.B. Bell publicly identified free weights, 24-hour access, and modern equipment as the resident-demand drivers. The buying conversation has moved from square footage to strength mix.'
+      },
+      {
+        topic: 'DoD human-performance moves from policy to funded build',
+        weeks: 4,
+        verticals: ['military'],
+        sourceCount: 2,
+        summary: 'Week 29 covered the assessment-standardization half of this thread. This cycle it turned into hardware. Navy Installations Command funded a $1 million NOFFS zone at Yokosuka and named Naval Air Facility Atsugi as next in the fleet-wide rollout, while I Corps expanded H2F delivery pairing body-composition testing with coached intervention. Standardized assessment is now pulling standardized training zones behind it.'
+      },
+      {
+        topic: 'Campus recreation specs against its own usage data',
+        weeks: 1,
+        verticals: ['campus-rec'],
+        sourceCount: 2,
+        summary: 'Texas A&M disclosed 1,195,345 annual strength and conditioning participations across five facilities and 1.8 million card swipes, tying replacement cycles to station-level demand against a $27 million operating budget. Dayton opened a $30 million wellbeing center on philanthropic funding. Recreation buyers now arrive at the spec conversation holding their own utilization data, which moves the argument from square footage to throughput.'
+      }
+    ],
+    verticals: {
+      'health-clubs': [
+        {
+          headline: 'US fitness traffic held above 2025 through midyear, but the gains split sharply by format.',
+          tags: ['HVLP', 'GROWTH'],
+          context: 'Average visits per commercial facility fell 0.5 percent year over year in the second quarter while first-half traffic stayed 1.5 percent above 2025. Boutique visits grew 2.5 percent, HVLP slipped 0.2 percent, mid-priced fell 1.7 percent, and luxury fell 2.3 percent. Average monthly visits per visitor declined 1.3 percent, meaning reach is growing faster than repeat use.',
+          implication: 'Opportunity. Falling visit frequency against rising reach is a programming and floor-mix problem, not an acquisition problem. LF/HS can frame strength expansion, dedicated zones, and refresh sequencing as levers that raise repeat use without spending more on membership marketing.',
+          conversation: 'Your category is reaching more people but seeing them less often. Let me help you find where a stronger strength or recovery zone gives members a reason to come back.',
+          source: 'Health & Fitness Association',
+          sourceUrl: 'https://www.healthandfitness.org/us-fitness-traffic-keeps-ahead-of-record-2025-pace-through-midyear/'
+        },
+        {
+          headline: 'ABC Fitness acquired Replify to put virtual agents into club sales and service workflows.',
+          tags: ['MID-PREMIUM', 'GROWTH'],
+          context: 'The acquired platform handles voice, text, email, and chat across lead capture, qualification, tour booking, class support, and missed-call follow-up. ABC Fitness said early users captured 10 times more leads and compressed sales cycles from 30 days to as few as three. Operator technology spend is being held to measurable labor efficiency and revenue conversion.',
+          implication: 'Signal. Operators applying a hard ROI test to software will apply the same test to equipment. LF/HS proposals need a floor-data and member-outcome story that connects a strength purchase to retention, not just to capacity.',
+          conversation: 'As more of your funnel gets automated, the fitness floor becomes the part you cannot measure. Let me help you close that gap with usage data tied to retention.',
+          source: 'ABC Fitness',
+          sourceUrl: 'https://abcfitness.com/press-release/abc-fitness-acquires-replify-agentic-ai/'
+        }
+      ],
+      'hospitality': [
+        {
+          extended: true,
+          headline: 'Hilton extended paid day access to fitness centers across the Americas for three more years.',
+          tags: ['WELLNESS', 'BRAND'],
+          context: 'Hilton and ResortPass renewed and expanded their partnership on July 14, giving locals and travelers day-use access to pools, spas, fitness centers, and cabanas at participating Americas properties without an overnight stay. The companies launched an Off Hours poolside series at Florida properties. Marriott separately approved day access as a global vendor arrangement.',
+          implication: 'Opportunity. A fitness center sold to non-guests is a commercial-duty floor, not a guest amenity. LF/HS can lead on serviceability, duty cycle, and warranty terms rated for day-pass volume rather than on brand-standard minimum compliance.',
+          conversation: 'You are now selling day passes into the fitness center. Let me help you confirm the floor is rated for non-guest traffic before the service tickets tell you it is not.',
+          source: 'Stories From Hilton',
+          sourceUrl: 'https://stories.hilton.com/releases/hilton-and-resortpass-expand-partnership'
+        },
+        {
+          extended: true,
+          headline: 'A 17-hotel owner reflagged a Charleston property with fitness held as a core amenity.',
+          tags: ['PIP', 'BRAND'],
+          context: 'The 197-room Lowline Hotel opened on King Street as a reimagining of a former Hyatt Place that Highline Hospitality Partners acquired with an adjacent hotel in 2024. Highline owns 17 US hotels. The project kept fitness in the core amenity set alongside meetings, food and beverage, and social space, making this a portfolio-level acquisition and reflag signal.',
+          implication: 'Opportunity. Owners that buy and reposition existing hotels can standardize a fitness retrofit package across the portfolio. Winning the template on one reflag is worth more than winning the property.',
+          conversation: 'You reflag acquired hotels on a repeatable model. Let me help you build one fitness package that travels across the portfolio instead of respeccing every property.',
+          source: 'Hyatt Newsroom',
+          sourceUrl: 'https://newsroom.hyatt.com/2026-July-15-TheLowlineHotelOpensItsDoorsonCharlestonsKingStreet%2CBringingtheJdVbyHyattBrandtoThePalmettoState'
+        }
+      ],
+      'multi-unit': [
+        {
+          headline: 'MAA\'s first fitness-center repositioning cohort posted a 98 percent re-lease rate and 13 percent cash-on-cash returns.',
+          tags: ['PORTFOLIO', 'CAPITAL'],
+          context: 'MAA, an apartment REIT with roughly 104,700 units across 16 states, disclosed the results in its second-quarter 2026 earnings release on July 29. The interior and common-area repositioning program, which includes upgraded and expanded fitness centers, is producing rent premiums strong enough to move additional property cohorts into construction and repricing.',
+          implication: 'Opportunity. This is a published return threshold on fitness-led repositioning at a REIT with more than 100,000 units. The next cohort is already funded, which makes this a live recurring equipment budget to be tracked property by property rather than a one-time refresh.',
+          conversation: 'Your first cohort already cleared the return threshold that funds the next one. Let me help you build the equipment list for that next round before the properties enter construction.',
+          source: 'PR Newswire',
+          sourceUrl: 'https://www.prnewswire.com/news-releases/maa-reports-second-quarter-2026-results-302838251.html'
+        },
+        {
+          headline: 'An $80 million Richmond apartment project broke ground with a rooftop gym and a 2028 delivery.',
+          tags: ['LEASE-UP', 'AIA'],
+          context: 'Doma will deliver 276 market-rate units, 4,000 square feet of commercial space, a rooftop gym, and a lap pool, with first units scheduled for the first quarter of 2028. The design team is already named. The distant lease-up date masks a specification window that is open right now, before structural and acoustic decisions harden around the rooftop location.',
+          implication: 'Opportunity. Rooftop fitness carries loading, acoustic, and service-access constraints that get locked in design development. Engaging the developer and design team now is worth more than bidding the equipment list in 2027.',
+          conversation: 'Your rooftop gym is still early enough to shape. Let me help you pressure-test structure, acoustics, and service paths with the design team before the spec is fixed.',
+          source: 'Thalhimer',
+          sourceUrl: 'https://thalhimer.com/marketwatch/our-blog/city-eda-and-diamond-district-partners-celebrate-groundbreaking-of-first-privately-financed-building-at-the-diamond-district/'
+        },
+        {
+          extended: true,
+          headline: 'NexCore broke ground on a 173-unit senior living community with wellness built into the core amenity mix.',
+          tags: ['SENIOR LIVING', 'AIA'],
+          context: 'The Sancerre White Marsh project in Baltimore County, Maryland, financed by Wintrust Bank and Provident Bank, broke ground July 22 and will offer independent living, assisted living, and memory care. Experience Senior Living, a NexCore subsidiary, is designing the amenity program around dining, wellness, social connection, and outdoor space ahead of a 2028 opening.',
+          implication: 'Opportunity. Ground-up senior living is a clean-slate specification for joint-friendly strength and low-impact cardio. Getting in during design development avoids a retrofit conversation two years out and sets the template for the operator\'s next community.',
+          conversation: 'You are early enough in design to build the wellness center around resident capability instead of retrofitting later. Let me help you get in front of your design team now.',
+          source: 'ACCESS Newswire',
+          sourceUrl: 'https://www.accessnewswire.com/newsroom/en/real-estate/nexcore-group-breaks-ground-on-sancerre-white-marsh-1194280'
+        }
+      ],
+      'campus-rec': [
+        {
+          headline: 'The University of Dayton opens a $30 million Health and Wellbeing Center with expanded fitness space August 3.',
+          tags: ['GROWTH', 'DESIGN'],
+          context: 'The 34,200-square-foot center opens roughly 17 months after groundbreaking, doubling health-center space and adding fitness areas alongside expansions to the RecPlex recreation complex. The project drew nearly $5 million in philanthropic gifts from four university board chairs and their spouses and is pursuing LEED 4.0 certification.',
+          implication: 'Opportunity. The RecPlex expansion tied to this opening is a live equipment cycle at a private university that just proved it can raise philanthropic capital for wellness infrastructure. Donor-funded projects tend to repeat once the first one lands well.',
+          conversation: 'Your new center opens this week with expanded RecPlex fitness space. Let me help you scope the strength and cardio lines for that space before fall move-in locks the layout.',
+          source: 'University of Dayton News',
+          sourceUrl: 'https://udayton.edu/news/articles/2026/07/health-wellbeing-building.php'
+        },
+        {
+          headline: 'Texas A&M reported nearly 1.2 million annual strength and conditioning participations across its recreation network.',
+          tags: ['GROWTH', 'SPEC'],
+          context: 'Five facilities provide nearly 700,000 square feet of indoor recreation space and recorded more than 1.8 million card swipes in fiscal 2025. Texas A&M reported that 69.4 percent of students use recreation facilities and that strength and conditioning generated 1,195,345 participations, against more than $8 million in renovations over two years and a fiscal 2026 operating budget above $27 million.',
+          implication: 'Signal. A network operating at this volume needs phased lifecycle replacement tied to station-level demand, not room-by-room refreshes. The department already has the usage data, which favors suppliers who can talk about throughput and replacement cadence rather than product lines.',
+          conversation: 'With more than a million annual strength uses, your replacement cycle should follow station demand. Let me help you map equipment life against your actual swipe data.',
+          source: 'Texas A&M University Division of Student Affairs',
+          sourceUrl: 'https://studentaffairs.tamu.edu/news/2026/07/22/a-century-of-growth-belonging-and-the-aggie-experience-in-motion/'
+        }
+      ],
+      'military': [
+        {
+          extended: true,
+          headline: 'The Navy opened a $1 million functional-fitness zone at Yokosuka and named the next base in a fleet-wide rollout.',
+          tags: ['S&C', 'RFP'],
+          context: 'Commander, Navy Installations Command funded a Navy Operational Fitness and Fueling System zone at the Purdy Fitness Center on Fleet Activities Yokosuka. The build added turf for sled pushes and sprints, cardio and strength stations, and a dedicated recovery area, replacing general gym space. Navy Installations Command said Naval Air Facility Atsugi is next.',
+          implication: 'Opportunity. NOFFS is a funded, repeatable specification rolling out installation by installation, which makes it a trackable pipeline rather than a series of isolated MWR buys. Winning the format early sets the reference build for the bases behind it.',
+          conversation: 'Navy Installations Command is rolling NOFFS zones out base by base. Let me help you find out where your installation sits on that list and who owns the equipment spec.',
+          source: 'Stars and Stripes',
+          sourceUrl: 'https://www.stripes.com/branches/navy/2026-07-17/noffs-navy-yokosuka-fitness-nutrition-japan-22287420.html'
+        },
+        {
+          extended: true,
+          headline: 'I Corps expanded Holistic Health and Fitness delivery by routing body-composition results into coached intervention.',
+          tags: ['SPORTS SCIENCE', 'S&C'],
+          context: 'The Fit to Fight initiative combines strength and conditioning, nutrition, sleep, mental performance, and recovery support. The assessment process measures muscle mass, fat mass, and visceral fat, then routes soldiers to multidisciplinary interventions. The model connects readiness testing directly to coached training rather than treating fitness as a stand-alone activity.',
+          implication: 'Opportunity. The gap between assessment and execution is a hardware and workflow gap. LF/HS can position equipment, assessment integration, and small-group training zones as one connected readiness system rather than as separate line items on a purchase request.',
+          conversation: 'Your H2F team is prescribing off body-composition data. Let me help you close the gap between the assessment and the training stations that deliver the intervention.',
+          source: 'U.S. Department of War',
+          sourceUrl: 'https://www.war.gov/News/Feature-Stories/Story/Article/4539178/i-corps-fit-to-fight-initiative-brings-holistic-health-fitness-to-the-force/'
+        }
+      ],
+      'performance': [
+        {
+          headline: 'The New York Giants committed to an 11,000-square-foot weight room inside a 139,500-square-foot facility expansion.',
+          tags: ['PRO SPORTS', 'S&C'],
+          context: 'The Giants announced 93,500 square feet of new construction and 46,000 square feet of renovation at the Quest Diagnostics Training Center in East Rutherford on July 27, targeting completion before the 2028 season. The weight room will include a nutrition bar and cardio mezzanine. Sports medicine and rehabilitation space triples, with hydrotherapy, cryotherapy, and hyperbaric recovery added.',
+          implication: 'Opportunity. The project treats strength, cardio, rehabilitation, and recovery as one integrated program, which favors a supplier who can coordinate across all four on a multi-year construction schedule rather than bid a strength package alone.',
+          conversation: 'Your performance spaces are being designed as one system. Let me help you sort out who owns the equipment decision across strength, cardio, rehab, and recovery before design development closes.',
+          source: 'Giants.com',
+          sourceUrl: 'https://www.giants.com/news/new-york-giants-announce-football-operations-facility-and-headquarters-expansion'
+        },
+        {
+          headline: 'USC moved football operations into its $200 million, 160,000-square-foot Bloom Performance Center.',
+          tags: ['COLLEGIATE', 'D1/D2/D3'],
+          context: 'Head coach Lincoln Riley confirmed at Big Ten Media Days on July 28 that USC had occupied the three-story Bloom Football Performance Center roughly 10 days earlier. The facility, anchored by a $50 million family gift plus other donor contributions, more than doubles the program\'s prior football space with two practice fields, a locker room, recovery space, and nutrition and training areas.',
+          implication: 'Opportunity. A newly occupied flagship strength floor at a program competing openly on facilities resets the benchmark for its conference peers. Every Big Ten program now has a comparison point it will be measured against in recruiting.',
+          conversation: 'USC just moved into a performance center built to win recruiting battles. Let me help you benchmark your strength floor against what your conference peers are putting on the table.',
+          source: 'Sports Illustrated',
+          sourceUrl: 'https://www.si.com/college/usc/football/lincoln-riley-doesnt-hold-back-usc-trojans-investment-new-football-facility-bloom-performance-center'
+        },
+        {
+          extended: true,
+          headline: 'The Denver Broncos opened a $175 million training complex with a new weight room.',
+          tags: ['PRO SPORTS', 'S&C'],
+          context: 'The Broncos moved into a 205,000-square-foot, three-story headquarters and training complex in Englewood, Colorado on July 13 after nearly two years of construction. The project, funded by the Walton-Penner ownership group, added a new weight room, expanded locker room, and indoor practice facility, adding more than 21,000 square feet of player space over the prior building.',
+          implication: 'Signal. A ground-up NFL weight room is a discrete, high-visibility specification event. If a competing vendor won that floor, it is a lost-account marker to log now and revisit at the first refresh cycle rather than a live opportunity.',
+          conversation: 'A division rival just opened a brand-new weight room inside a $175 million build. Let me help you put a date and a budget on your next strength floor refresh.',
+          source: 'Denver Broncos',
+          sourceUrl: 'https://www.denverbroncos.com/news/i-don-t-think-there-s-anything-like-this-in-the-league-broncos-move-into-new-state-of-the-art-broncos-park-powered-by-commonspirit-as-training-camp-begins'
+        }
+      ]
+    },
+    flags: [
+      {
+        competitor: 'Technogym',
+        priority: 'medium',
+        note: 'Reported first-half 2026 revenue of roughly €493 million, up 7.4 percent, with €26 million committed to production expansion and innovation and price lists adjusted in July. Announced July 30.'
+      },
+      {
+        competitor: 'EGYM',
+        priority: 'medium',
+        note: 'Partnered with IT services firm Kyndryl on July 16 to deploy an AI-driven credit and financing assessment tool for fitness studios on Google Cloud, extending beyond hardware into studio financing infrastructure.'
+      },
+      {
+        competitor: 'Rogue Fitness',
+        priority: 'medium',
+        note: 'Launched Air Rhino on July 16, a concentric-only strength machine with 20 to 1,200 pounds of resistance and integrated force metrics.'
+      },
+      {
+        competitor: 'Matrix',
+        priority: 'low',
+        note: 'Signed a three-year deal to become PSV Eindhoven\'s official fitness partner from the 2026-27 season, covering the first team, academy, and Vitality programs. Announcement date could not be confirmed as falling inside the window; treat as directional only.'
+      },
+      {
+        competitor: 'Tracked roster',
+        priority: 'low',
+        note: 'No other material in-window activity confirmed for Precor and Peloton Commercial, Eleiko, Tonal, or Vision Fitness. The tracked US roster is 9; Life Fitness and Hammer Strength brands are excluded from it.'
+      }
+    ],
+    metadata: {
+      processed: '~176',
+      delivered: 14,
+      dedup: 'Merged brief covering July 20 to August 2 (Weeks 30 and 31 combined; Week 30 was not published). Built from US_CURATED_Week-31, merging the Claude and ChatGPT pulls. Four items excluded for overlap with Week 29: Core Spaces HUB College Station, the DLA $763 million fitness gear contract, the Army waist-to-height change, and the Michigan and Michigan State recreation centers. Gold\'s Gym dropped as a key-account exclusion; the key-account exception slot was not used. West Valley College, P.B. Bell, Gonzaga, and Drexel held. Trending week counts include the unpublished Week 30 window. US tracked roster is 9.'
+    }
+  },
+  {
     id: 'w2026-29',
     issue: 'Issue №29 / 2026',
     weekRange: 'July 6 – July 18, 2026',
@@ -883,22 +1102,22 @@ const BRIEFS_BY_REGION = {
       'campus-rec': [
         {
           priority: true,
-          headline: 'Michigan State opens its $200 million rec and wellness center, a Life Fitness / Hammer Strength win.',
+          headline: 'Michigan State opens its $200 million rec and wellness center, a Life Fitness and Hammer Strength win.',
           tags: ['WIN', 'BIG TEN'],
           context: 'Michigan State\'s new $200 million, 293,000-square-foot Student Recreation and Wellness Center holds its grand opening this fall after an April soft open. It replaces the 67-year-old IM West and includes 30,000 square feet of tiered fitness space and a weight room, with students on the equipment selection committee.',
-          implication: 'Win. A Life Fitness / Hammer Strength placement at a Big Ten flagship becomes the reference tour for peer institutions benchmarking their own builds, a proof point reps can use across the collegiate pipeline and to defend the refresh and service cycle.',
-          conversation: 'Michigan State just opened a $200 million rec center on Life Fitness / Hammer Strength. When your rec board benchmarks the Big Ten, let me arrange a look at what they installed and why.',
+          implication: 'Win. A Life Fitness and Hammer Strength placement at a Big Ten flagship becomes the reference tour for peer institutions benchmarking their own builds, a proof point reps can use across the collegiate pipeline and to defend the refresh and service cycle.',
+          conversation: 'Michigan State just opened a $200 million rec center on Life Fitness and Hammer Strength. When your rec board benchmarks the Big Ten, let me arrange a look at what they installed and why.',
           source: 'Athletic Business',
           sourceUrl: 'https://www.athleticbusiness.com/facilities/rec-center/article/15827159/students-at-michigan-michigan-state-drive-campus-rec-center-renaissance'
         },
         {
           priority: true,
           extended: true,
-          headline: 'The University of Michigan opens its $165 million Hadley center, a Life Fitness / Hammer Strength win.',
+          headline: 'The University of Michigan opens its $165 million Hadley center, a Life Fitness and Hammer Strength win.',
           tags: ['WIN', 'CONNECTED'],
           context: 'Michigan opened its Hadley Family Recreation and Well-Being Center in summer 2026, a 200,000-plus-square-foot, five-level facility with 11 strength, cardio, and fitness zones, a cycling studio with 25 connected bikes and leaderboards, and a group exercise studio. Students served on the equipment selection committee.',
-          implication: 'Win. A Life Fitness / Hammer Strength placement at a second Big Ten flagship, alongside Michigan State, gives reps back-to-back reference sites peer institutions will tour when benchmarking their own connected-fitness and strength builds, and anchors the refresh and service cycle.',
-          conversation: 'Michigan\'s new Hadley Center runs on Life Fitness / Hammer Strength, our second Big Ten flagship this cycle. When your director tours it, let me line up what they installed and why it fits your next build.',
+          implication: 'Win. A Life Fitness and Hammer Strength placement at a second Big Ten flagship, alongside Michigan State, gives reps back-to-back reference sites peer institutions will tour when benchmarking their own connected-fitness and strength builds, and anchors the refresh and service cycle.',
+          conversation: 'Michigan\'s new Hadley Center runs on Life Fitness and Hammer Strength, our second Big Ten flagship this cycle. When your director tours it, let me line up what they installed and why it fits your next build.',
           source: 'Athletic Business',
           sourceUrl: 'https://www.athleticbusiness.com/facilities/rec-center/article/15827159/students-at-michigan-michigan-state-drive-campus-rec-center-renaissance'
         },
@@ -1001,13 +1220,13 @@ const BRIEFS_BY_REGION = {
       {
         competitor: 'Tracked roster',
         priority: 'low',
-        note: 'No other material in-window activity confirmed for Technogym, Matrix, Precor and Peloton Commercial beyond the above, Rogue Fitness, Eleiko, Tonal, Tempo, or Vision Fitness. Cybex is a Life Fitness / Hammer Strength brand and is excluded from the tracked roster.'
+        note: 'No other material in-window activity confirmed for Technogym, Matrix, Precor and Peloton Commercial beyond the above, Rogue Fitness, Eleiko, Tonal, Tempo, or Vision Fitness. Cybex is a Life Fitness and Hammer Strength brand and is excluded from the tracked roster.'
       }
     ],
     metadata: {
       processed: '~65',
       delivered: 21,
-      dedup: 'Merged brief covering July 6 to 18 (Weeks 28 and 29 combined). Built from US_CURATED_Week-28 plus net-new Week 29 vertical research. Michigan State reframed as a confirmed Life Fitness / Hammer Strength win. Weaker or repeat items rolled into Trending and Competitive Flags to keep the card tight. Cybex excluded as an LF/HS brand; US roster is 9.'
+      dedup: 'Merged brief covering July 6 to 18 (Weeks 28 and 29 combined). Built from US_CURATED_Week-28 plus net-new Week 29 vertical research. Michigan State reframed as a confirmed Life Fitness and Hammer Strength win. Weaker or repeat items rolled into Trending and Competitive Flags to keep the card tight. Cybex excluded as an LF/HS brand; US roster is 9.'
     }
   }, {
     id: 'w2026-27',
@@ -1233,13 +1452,13 @@ const BRIEFS_BY_REGION = {
       {
         competitor: 'Tracked roster',
         priority: 'low',
-        note: 'No material in-window activity confirmed for Matrix, Precor and Peloton Commercial, Rogue Fitness, Eleiko, Tonal, Tempo, or Vision Fitness. Cybex is a Life Fitness / Hammer Strength brand and is excluded from competitive reporting.'
+        note: 'No material in-window activity confirmed for Matrix, Precor and Peloton Commercial, Rogue Fitness, Eleiko, Tonal, Tempo, or Vision Fitness. Cybex is a Life Fitness and Hammer Strength brand and is excluded from competitive reporting.'
       }
     ],
     metadata: {
       processed: '~65',
       delivered: 17,
-      dedup: 'Week 27 top-up and verification pass. Cybex struck from the tracked roster as a Life Fitness / Hammer Strength brand and excluded from all reporting; US roster cut to 9. Three net-new items added (Fitness World US entry, Mass. Maritime $30M wellness center, Ohio State $125M Woody Hayes renovation); Iowa field hockey dropped to hold three per vertical. Chuze and In-Shape date corrected to June 25 and Army H2F to June 17, both verified; provisional Military tag dropped, tags set to SPORTS SCIENCE and S&C. Trending week-counts default to 1: Weeks 25-26 were content-only and never built, so multi-week counters cannot be derived from the shell. Data-domain confirmed lowercase market-intel-brief-us. Sources: Claude gap-fill and verification pass.'
+      dedup: 'Week 27 top-up and verification pass. Cybex struck from the tracked roster as a Life Fitness and Hammer Strength brand and excluded from all reporting; US roster cut to 9. Three net-new items added (Fitness World US entry, Mass. Maritime $30M wellness center, Ohio State $125M Woody Hayes renovation); Iowa field hockey dropped to hold three per vertical. Chuze and In-Shape date corrected to June 25 and Army H2F to June 17, both verified; provisional Military tag dropped, tags set to SPORTS SCIENCE and S&C. Trending week-counts default to 1: Weeks 25-26 were content-only and never built, so multi-week counters cannot be derived from the shell. Data-domain confirmed lowercase market-intel-brief-us. Sources: Claude gap-fill and verification pass.'
     }
   }, {
     id: 'w2026-24',
@@ -2573,7 +2792,7 @@ const BRIEFS_BY_REGION = {
       }, {
         headline: 'Vision Fitness (Johnson Health Tech) announces 60+ commercial product launches for 2026',
         tags: ['MID-PREMIUM', 'GROWTH'],
-        context: 'Vision Fitness disclosed plans for the largest product expansion in brand history: 60+ commercial product launches in 2026, including the Vista cardio series, Summit cardio series, Access selectorized strength line, and Keystone plate-loaded line. Vision is positioned as Johnson Health Tech\u2019s value-conscious commercial brand, targeting independent health clubs, hospitality, and multifamily — directly competing in mid-tier deals where Life Fitness / Hammer Strength typically lead with premium positioning.',
+        context: 'Vision Fitness disclosed plans for the largest product expansion in brand history: 60+ commercial product launches in 2026, including the Vista cardio series, Summit cardio series, Access selectorized strength line, and Keystone plate-loaded line. Vision is positioned as Johnson Health Tech\u2019s value-conscious commercial brand, targeting independent health clubs, hospitality, and multifamily — directly competing in mid-tier deals where Life Fitness and Hammer Strength typically lead with premium positioning.',
         implication: 'Mid-tier health clubs evaluating equipment refresh in 2026 will see a flood of Vision marketing positioned on price-to-value. Reps should pre-empt the comparison conversation: Vision\u2019s strategy targets value-conscious operators with simple, durable equipment. Lead with total cost of ownership, service network depth, and connected platform capabilities — areas where Vision\u2019s value positioning has structural gaps.',
         conversation: 'Vision Fitness is going to be in every mid-tier deal you work this year with a price-led pitch. Let me arm you with the comparison framework — service response times, parts availability, member retention data tied to equipment quality. The price-per-unit conversation always favors them; the cost-per-member-retained conversation always favors us.',
         source: 'Fit Gear Source',
