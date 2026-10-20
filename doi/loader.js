@@ -25,8 +25,12 @@
     var params = { doi_region: region };
     for (var k in (props || {})) params[k] = props[k];
     try {
-      if (typeof window.gtag === 'function') window.gtag('event', ev.slice(0, 40), params);
-      else (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: ev.slice(0, 40) }, params));
+      // Google Tag Manager sites (engage.lifefitness.com): push to the data layer; a GTM Custom Event
+      // trigger on ^doi_ forwards these to GA4. Sites with a bare gtag.js install get gtag events.
+      var dl = window.dataLayer = window.dataLayer || [];
+      var gtm = !!window.google_tag_manager || dl.some(function (x) { return x && x['gtm.start']; });
+      if (!gtm && typeof window.gtag === 'function') window.gtag('event', ev.slice(0, 40), params);
+      else dl.push(Object.assign({ event: ev.slice(0, 40) }, params));
     } catch (e) { /* never break the page for analytics */ }
   }
   if (!window.plausible) window.plausible = function (name, opts) { track(name, opts && opts.props); };
